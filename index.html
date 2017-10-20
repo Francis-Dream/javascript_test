@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>小薇学院-三栏式布局</title>
+    <style type="text/css">
+    *{margin: 0;padding: 0px;}
+    body{padding: 20px;}
+    .content{
+        padding: 20px;
+        border: 1px solid #999;
+        display:flex;
+        display:-webkit-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        background-color: #eee;
+    }
+    .box1,.box2,.box3{background-color: #fff;border: 1px solid #999;padding: 20px;}
+    .box1{
+        width: 200px;
+        height: 90px;
+    }
+    .box1 .team{
+        float: left;
+        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    .box2{
+        margin: 0 20px;
+        width: 100%;
+        height: 300px;
+    }
+    .box2 p{margin-bottom: 10px;}
+    .box3{
+        width: 120px;
+        height: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .box3 div{
+        width: 80px;
+        height: 80px;
+        background-color: #eee;
+        border: 1px solid #999;
+        margin-bottom: 10px;
+    }
+    </style>
 </head>
 <body>
-    <h2>个人简历</h2>
+    <div class="content">
+        <div class="box1">
+            <div class="team">
+                <img src="" alt="团队logo" width="80" height="80" />
+            </div>
+            团队名称
+        </div>
+        <div class="box2">
+            <p>关于你们团队的介绍。</p>
+            <p>可以给我们解释一下团队名称的来历，或是分别介绍你们团队的成员
+(以下为示例)</p>
+            <p>百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台
+百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台
+</p>
+            <p>百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台
+百度WEB前段技术学院(Baidu Institute of Front-End Technology简称IFE)是一个由百度人力组员部校园招聘组、百度EFE团队联合出品的、面向在校大学生一级对前段技术有兴趣的前段在线学习平台</p>
+        </div>
+        <div class="box3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div style="margin-bottom:0;"></div>
+        </div>
+    </div>
 </body>
 </html>
